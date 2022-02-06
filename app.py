@@ -7,7 +7,6 @@ import geocoder
 import folium
 from streamlit_folium import folium_static
 from sklearn.cluster import KMeans
-import plotly.express as px
 
 
 st.title("Clustering Neighbourhoods in London")
