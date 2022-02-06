@@ -33,7 +33,7 @@ def get_latlng(neighbourhood):
     return lat_lng_coords
 
 coords = [ get_latlng(neighbourhood) for neighbourhood in df["Neighbourhood"].tolist() ]
-df_coords = pd.DataFrame(coords, columns=['Latitude', 'Longitude'])
+df_coords = pd.DataFrame.from_records(coords, columns=['Latitude', 'Longitude'])
 df['Latitude'] = df_coords['Latitude']
 df['Longitude'] = df_coords['Longitude']
 address = 'London, United Kingdom'
