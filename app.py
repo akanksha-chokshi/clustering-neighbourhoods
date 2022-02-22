@@ -157,6 +157,11 @@ elif choice == "Explore a Venue":
 
         folium_static(map_clusters)
 
+with st.expander("What I Learned From This Project"):
+    st.markdown("I learned how to use APIs by extracting data from the Foursquare API. I practised data preprocessing and exploratory analytics to get it ready for machine learning.")
+    st.markdown("I queried data from the dataframe for different purposes. I used BS4 for web scraping to download neighbourhood information from Wikipedia.")
+    st.markdown("I learned to use Folium to visualise, format and handle geospatial data.")
+    st.markdown("I clustered neighbourhoods using K-Means Clustering from the scikit-learn library.")
 
 
 
