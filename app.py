@@ -9,8 +9,7 @@ from streamlit_folium import folium_static
 from sklearn.cluster import KMeans
 
 
-st.title("Clustering Neighbourhoods in London")
-st.sidebar.title("Clustering Neighbourhoods in London")
+st.title("Neighbourhood Explorer: London Edition")
 
 data = requests.get('https://en.wikipedia.org/wiki/List_of_places_in_London').text
 
@@ -126,7 +125,7 @@ elif choice == "Explore a Venue":
             fill_color="##3186cc",
             fill_opacity=0.7).add_to(map_clusters)
         
-    cluster = st.sidebar.checkbox("Cluster Neighbourhoods Based on Venue", False)
+    cluster = st.sidebar.checkbox("Cluster Neighbourhoods Based on This Venue", False)
     if not cluster:
         folium_static (map_clusters)
 
