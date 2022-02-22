@@ -9,7 +9,8 @@ from streamlit_folium import folium_static
 from sklearn.cluster import KMeans
 
 
-st.title("Neighbourhood Explorer: London Edition")
+st.title("Neighbourhood Explorer")
+st.sidebar.title("London Edition")
 
 data = requests.get('https://en.wikipedia.org/wiki/List_of_places_in_London').text
 
